@@ -7,7 +7,6 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-export default {
   output: 'export',
   eslint: {
     ignoreDuringBuilds: true,
@@ -24,6 +23,8 @@ export default {
     parallelServerCompiles: true,
   },
 };
+
+module.exports = nextConfig;
 
 
 mergeConfig(nextConfig, userConfig)
